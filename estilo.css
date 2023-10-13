@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Akshar:wght@300;400&family=Noto+Sans+Old+Permic&family=Roboto:ital,wght@1,300&display=swap');
+
+/*Selector universal para toda la página*/
+
+* {
+	color: aliceblue;
+	font-family: 'Adamina', serif; /*Familia tipografica o fuente de letra */
+	background-color: #28202F;
+	overflow: visible;
+	box-sizing: border-box; 
+}
+
+/*PIE DE PAGINA*/
+
+.logo {
+	margin-top: 10px;
+	height: 10em;
+	width: 8em;
+	margin-right: 15px;
+}
+ 
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+ul {
+	display: flex; /*Ayuda a colocal a las cajas como si fueran celdas de tablas, adaptables*/
+	color: rgb(252, 189, 246);
+	list-style: none; /*Estilo de lista: ninguno (para sacar las bolitas de los items*/
+	justify-content: flex-end; /*En el lado derecho de la caja*/
+	align-items: center; /*En Y estoy en el centro*/
+	padding-left: 0px;
+}
+
+ul li {
+	width: 10rem;
+	border: 1px solid white;
+	padding: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgb(106, 48, 106);
+	/*border: 1px ridge black;*/ 
+}
+
+/*Uso selector Descendiente porque esta dentro de dos etiquetas*/
+
+ul li a {
+	color: rgb(233, 193, 245);
+	font-weight: 600; 
+	text-align: center;
+    text-decoration: none; /*Con none eliminamos la decoracion del texto en este caso con los enlaces el susbrayado y el color azuñ*/
+}
+
+ul li a:hover {
+	font-size: 20px;
+	color: blanchedalmond;
+	text-decoration: underline; /*Decoracion de texto*/
+}
+
+/* CUERPO DE LA PAGINA */
+
+h1, h2 {
+	color: #D3A448;
+	background-color: #28202F; /*Color de fondo*/
+	align-items: center;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px; /*Relleno*/
+	font-size: 34px; /*Tamaño de fuente*/
+	font-weight: 900; /*Peso de fuente*/
+	letter-spacing: 6px; /*espacio entre letra y letra*/
+}
+
+.flexpage {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+p {
+	text-align: center; /*Alineacion de texto*/
+	color: white;
+	font-size: 20px;
+	background-image: url(./image/imagen9.jpg); /*Imagen de fondo*/
+	background-attachment: fixed;
+	background-size: 100% 100%; /*Que ocupe toda la pagina en X y en Y*/
+	margin-bottom: 0px; /*Margen*/
+	padding: 40px;
+	width: 100%; /*Ancho de las cajas*/
+	height: 100%;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-weight: 700;
+    justify-content: center;
+	border: 5px outset #D3A448;
+	display: block;
+}
+
+.galery-container {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.img-galery {
+	width: 20rem;
+	height: 15rem;
+	padding: 10px 0px 10px 0px;
+	align-items: center;
+}
+
+.img-galery:hover {
+   width: 22rem;
+   height: 18rem;
+}
+

@@ -1,0 +1,70 @@
+<!doctype html>
+     <!DOCTYPE html>
+     <html lang="es-ar">
+     <head>
+     	<meta charset="utf-8">
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="estilo.css"> 
+      <link rel="stylesheet" type="text/css" href="./Bootstrap-4.6.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous"> <!-- link de bootstrap flexbox -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.9.1/font/bootstrap-icons.css"> 
+     	<title>Tattoo Website</title>
+     </head>
+     <body>
+
+       <!-- ENCABEZADO DE LA PAGINA -->
+
+      <header class="header-container">
+        <div> <!--LOGO-->
+          <img class="logo" src="./image/imagestatu.jpg"> 
+        </div>
+        <nav> <!-- ENLACES -->
+          <ul>
+            <li><a href="">Item 1</a></li> 
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+            <li><a href="">Item 4</a></li>
+            <li><a href="">Item 5</a></li>
+          </ul> 
+        </nav>
+      </header>
+
+      <!-- CUERPO DE LA PAGINA -->
+
+    <div class="flexpage">
+      <article>
+       <section> 
+        <h1 style="margin-bottom: 0px;" >Bienvenido a nuestro lugar en el mundo</h1>
+         <p style="margin-bottom: 0px;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quidem distinctio architecto doloribus! Odio, alias? Ad esse aliquid autem quo magni sequi eligendi fugit porro, voluptatibus optio sit repellat! Quos, delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facilis dolore, praesentium vitae corporis laudantium consequatur, pariatur ratione unde libero ex repellat obcaecati tempore iure, reprehenderit consectetur eum velit voluptatum.</p>
+       </section>
+       <section>
+        <h2 style="margin-bottom: 0px">¿Que servicio brindamos?</h2>
+         <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Perferendis magnam corrupti tenetur blanditiis illum qui quidem aspernatur maxime, nam animi debitis quos quo maiores cupiditate numquam aliquid tempore voluptates id.</p>
+       </section>
+       <section class="container">
+          <form action="codigo.php" class="row">
+            <fieldset> 
+             <legend>Datos Personales</legend>
+               <label> Nombre: <input type="text" name="Nombre" required></label><span>*</span><br>
+               <label> Apellido: <input type="text" name="Apellido" required></label><span>*</span><br>
+               <label> Fecha de nacimiento: <input type="date" required></label><span>*</span><br>
+               <label> Edad: <input type="number" required min="18" max="80"></label><span>*</span><br>
+               <label> Email: <input type="email" required placeholder="info@gmail.com"></label><span>*</span><br>
+               <button onclick="alert('Fueron enviados tus datos')">Enviar</button> <!--  Envia una ventana indicando un mensaje en este caso que el formulario ha sido enviado -->
+            </fieldset>
+          </form>
+       </section>
+      </article>
+     </div>
+     <section>
+       <div class="galery-container">
+        <img src="./image/mariposa.jpg" alt="Mariposa" class="img-galery">
+        <img src="./image/mujer.jpg" alt="Tatujae brazos" class="img-galery">
+        <img src="./image/tatuaje.jpg" alt="Espalda completa" class="img-galery">
+        <img src="./image/colibri.jpg" alt="Colibri" class="img-galery">
+       </div>
+     </section>
+      </body>
+     </html>
