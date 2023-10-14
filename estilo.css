@@ -6,27 +6,36 @@
 	color: aliceblue;
 	font-family: 'Adamina', serif; /*Familia tipografica o fuente de letra */
 	background-color: #28202F;
-	overflow: visible;
-	box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+body {
+    margin-top: 20rem; /*Margen que se da para poder visualizarlo*/
+	box-sizing: content-box;
 }
 
 /*PIE DE PAGINA*/
 
 .logo {
 	margin-top: 10px;
-	height: 10em;
-	width: 8em;
 	margin-right: 15px;
+	height: 7rem;
+	width: 8rem;
 }
  
 .header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	width: 100%;
+	height: rem;
+	top: o;
+	border-bottom: 1px solid #D3A448;
+
 }
 
 ul {
-	display: flex; /*Ayuda a colocal a las cajas como si fueran celdas de tablas, adaptables*/
+	display: flex; /*Ayuda a colocar a las cajas como si fueran celdas de tablas, adaptables*/
 	color: rgb(252, 189, 246);
 	list-style: none; /*Estilo de lista: ninguno (para sacar las bolitas de los items*/
 	justify-content: flex-end; /*En el lado derecho de la caja*/
@@ -36,15 +45,14 @@ ul {
 
 ul li {
 	width: 10rem;
-	border: 1px solid white;
+	border: 1px solid #28202F;
 	padding: 10px;
     margin-right: 8px;
     margin-left: 8px;
 	justify-content: center;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: uppercase; /*Mayuscula*/
 	background-color: rgb(106, 48, 106);
-	/*border: 1px ridge black;*/ 
 }
 
 /*Uso selector Descendiente porque esta dentro de dos etiquetas*/
@@ -64,45 +72,55 @@ ul li a:hover {
 
 /* CUERPO DE LA PAGINA */
 
-h1, h2 {
-	color: #D3A448;
-	background-color: #28202F; /*Color de fondo*/
-	align-items: center;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 20px; /*Relleno*/
-	font-size: 34px; /*Tamaño de fuente*/
-	font-weight: 900; /*Peso de fuente*/
-	letter-spacing: 6px; /*espacio entre letra y letra*/
-}
-
-.flexpage {
+.flex {
     display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
 
-p {
+
+h1, .section-container {
+	color: #272114;
+	background-image: url(./image/imagen9.jpg); /*Imagen de fondo*/
+	background-attachment: fixed; /*La imagen se queda fija cuando haces scrool*/
+	align-items: center;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px; /*Relleno*/
+	font-size: 34px; /*Tamaño de fuente*/
+	letter-spacing: 6px; /*espacio entre letra y letra*/
+}
+
+.fondotatto {
 	text-align: center; /*Alineacion de texto*/
 	color: white;
+	background-image: url(./image/imagen9.jpg);
 	font-size: 20px;
-	background-image: url(./image/imagen9.jpg); /*Imagen de fondo*/
-	background-attachment: fixed;
-	background-size: 100% 100%; /*Que ocupe toda la pagina en X y en Y*/
 	margin-bottom: 0px; /*Margen*/
 	padding: 40px;
 	width: 100%; /*Ancho de las cajas*/
 	height: 100%;
 }
 
+.equipo-container, h2, p{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-color: aliceblue;
+	color: #272114;
+	padding: 2rem;
+}
+
 form {
-    width: 100%;
+	width: 100%;
+	font-size: 1.5rem;
     margin: 0;
     padding: 20px;
-    font-weight: 700;
+    font-weight: 500;
     justify-content: center;
-	border: 5px outset #D3A448;
 	display: block;
 }
 
