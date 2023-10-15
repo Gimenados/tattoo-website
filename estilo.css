@@ -9,17 +9,19 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
-    margin-top: 20rem; /*Margen que se da para poder visualizarlo*/
-	box-sizing: content-box;
+    margin-top: 64px !important; /*Margen que se da para poder visualizarlo*/
 }
 
 /*PIE DE PAGINA*/
 
 .logo {
-	margin-top: 10px;
 	margin-right: 15px;
-	height: 7rem;
+	height: 5rem;
 	width: 8rem;
 }
  
@@ -28,10 +30,11 @@ body {
 	justify-content: space-between;
 	align-items: baseline;
 	width: 100%;
-	height: rem;
-	top: o;
+	height: auto;
+	top: 0px;
+	left: 0;
 	border-bottom: 1px solid #D3A448;
-
+    position: fixed;
 }
 
 ul {
@@ -59,7 +62,8 @@ ul li {
 
 ul li a {
 	color: rgb(233, 193, 245);
-	font-weight: 600; 
+	font-size: 1rem;
+	font-weight: 500; 
 	text-align: center;
     text-decoration: none; /*Con none eliminamos la decoracion del texto en este caso con los enlaces el susbrayado y el color azuñ*/
 }
@@ -87,9 +91,9 @@ h1, .section-container {
 	align-items: center;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 20px; /*Relleno*/
+	padding: 14px; /*Relleno*/
 	font-size: 34px; /*Tamaño de fuente*/
-	letter-spacing: 6px; /*espacio entre letra y letra*/
+	letter-spacing: 0.5rem; /*espacio entre letra y letra*/
 }
 
 .fondotatto {
