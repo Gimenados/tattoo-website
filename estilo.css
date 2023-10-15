@@ -84,7 +84,7 @@ ul li a:hover {
 }
 
 
-h1, .section-container {
+h1, .section-container p {
 	color: #272114;
 	background-image: url(./image/imagen9.jpg); /*Imagen de fondo*/
 	background-attachment: fixed; /*La imagen se queda fija cuando haces scrool*/
@@ -92,15 +92,13 @@ h1, .section-container {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 14px; /*Relleno*/
-	font-size: 34px; /*Tamaño de fuente*/
-	letter-spacing: 0.5rem; /*espacio entre letra y letra*/
 }
 
 .fondotatto {
 	text-align: center; /*Alineacion de texto*/
 	color: white;
 	background-image: url(./image/imagen9.jpg);
-	font-size: 20px;
+	font-size: 12px;
 	margin-bottom: 0px; /*Margen*/
 	padding: 40px;
 	width: 100%; /*Ancho de las cajas*/
