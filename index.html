@@ -46,28 +46,22 @@
         <main>
          <h2>Diseñadora</h2>
         <div class="card-container"> 
-         <div class="card">
-           <img class="img-card" src="./image/diseñadora.jpg" alt="Diseñadora Nombre">
+          <div class="img-container"> 
+          <img class="img-card" src="./image/diseñadora.jpg" alt="Diseñadora Nombre">
             <div class="bio">
-              <h3>Title:</h3>
+              <h3>Nombre</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, rem officiis.</p>
             </div>
-         </div>
+            </div>
+            <div class="img-container">
+            <img class="img-card" src="./image/diseñadora.jpg" alt="Diseñadora Nombre">
+            <div class="bio">
+              <h3>Nombre</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, rem officiis.</p>
+            </div>
+            </div>
         </div>
         </main>
-       <section class="form-container">
-          <form action="codigo.php" class="row">
-            <fieldset> 
-             <legend id="contacto">Datos de contacto</legend>
-               <label> Nombre: <input type="text" name="Nombre" required></label><span>*</span><br>
-               <label> Apellido: <input type="text" name="Apellido" required></label><span>*</span><br>
-               <label> Fecha de nacimiento: <input type="date" required></label><span>*</span><br>
-               <label> Edad: <input type="number" required min="18" max="80"></label><span>*</span><br>
-               <label> Email: <input type="email" required placeholder="info@gmail.com"></label><span>*</span><br>
-               <button onclick="alert('Fueron enviados tus datos')">Enviar</button> <!--  Envia una ventana indicando un mensaje en este caso que el formulario ha sido enviado -->
-            </fieldset>
-          </form>
-       </section>
       </article>
      </div>
      <section>
@@ -82,5 +76,18 @@
         </div>
       </div>
      </section>
+     <section class="form-container">
+      <form action="codigo.php" class="row">
+        <fieldset> 
+         <legend id="contacto">Datos de contacto</legend>
+           <label> Nombre: <input type="text" name="Nombre" required></label><span>*</span><br>
+           <label> Apellido: <input type="text" name="Apellido" required></label><span>*</span><br>
+           <label> Fecha de nacimiento: <input type="date" required></label><span>*</span><br>
+           <label> Edad: <input type="number" required min="18" max="80"></label><span>*</span><br>
+           <label> Email: <input type="email" required placeholder="info@gmail.com"></label><span>*</span><br>
+           <button onclick="alert('Fueron enviados tus datos')">Enviar</button> <!--  Envia una ventana indicando un mensaje en este caso que el formulario ha sido enviado -->
+        </fieldset>
+      </form>
+   </section>
       </body>
      </html>
