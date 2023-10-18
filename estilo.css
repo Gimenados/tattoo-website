@@ -14,10 +14,10 @@ html {
 }
 
 body {
-    margin-top: 64px !important; /*Margen que se da para poder visualizarlo*/
+    margin-top: 70px !important; /*Margen que se da para poder visualizar el header*/
 }
 
-/*PIE DE PAGINA*/
+/*HEADER*/
 
 .logo {
 	margin-right: 15px;
@@ -74,7 +74,7 @@ ul li a:hover {
 	text-decoration: underline; /*Decoracion de texto*/
 }
 
-/* CUERPO DE LA PAGINA */
+/* CUERPO DE LA PAGINA (primera seccion) */
 
 .flex {
     display: flex;
@@ -83,31 +83,43 @@ ul li a:hover {
 	width: 100%;
 }
 
+h1 {
+	margin-bottom: 0 !important; 
+	font-weight: 900; 
+	font-size: 34px; 
+	letter-spacing: 0.5rem;
+	background-color: #122816a1; 
+}
 
-h1, .section-container p {
+.section-container, h1 {
 	color: #272114;
 	background-image: url(./image/imagen9.jpg); /*Imagen de fondo*/
+	background-repeat: round;
 	background-attachment: fixed; /*La imagen se queda fija cuando haces scrool*/
 	align-items: center;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 14px; /*Relleno*/
+	padding: 30px; /*Relleno*/
 }
 
-.fondotatto {
+.section-container p {
 	text-align: center; /*Alineacion de texto*/
 	color: white;
-	background-image: url(./image/imagen9.jpg);
+	background-color: #5a5a5a50; 
 	font-size: 12px;
 	margin-bottom: 0px; /*Margen*/
-	padding: 40px;
+	padding: 25px;
 	width: 100%; /*Ancho de las cajas*/
 	height: 100%;
 }
 
-.equipo-container, h2, p{
+/*Segunda seccion*/
+
+.equipo-container, h2, p {
 	display: flex;
 	flex-wrap: wrap;
+	text-transform: uppercase;
+	letter-spacing: 0.20rem;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -115,6 +127,30 @@ h1, .section-container p {
 	color: #272114;
 	padding: 2rem;
 }
+
+/*Tercera seccion*/
+
+main h2 {
+	background-color: #28202F !important;
+	color: antiquewhite;
+}
+
+.card-container {
+	display: flex;
+}
+
+.card {
+	border-radius: 15px;
+	width: 30rem;
+	height: 25rem;
+}
+
+.bio {
+	padding: 10px;
+	color: white;
+}
+
+/*FORMULARIO*/
 
 form {
 	width: 100%;
@@ -128,19 +164,31 @@ form {
 
 .galery-container {
 	display:flex;
+	align-items: center;
+	column-gap: 20px;
+	overflow-x: scroll;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
+.galery-item {
+	display: flex; /*Que se adapte a el scroll*/
+	scroll-snap-align: center; /*Esta propiedad se debe usar en el contenedor donde esta nuestras imagenes, por eso item, los mantiene en el centro*/
+	min-width: 100%;
+}
+
 .img-galery {
+	border-radius: 10%;
 	width: 20rem;
 	height: 15rem;
+	margin: 5px;
 	padding: 10px 0px 10px 0px;
 	align-items: center;
+	object-fit: cover;
 }
 
 .img-galery:hover {
-   width: 22rem;
-   height: 18rem;
+   width: 21rem;
+   height: 16rem;
 }
 
