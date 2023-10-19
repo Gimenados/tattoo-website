@@ -6,7 +6,6 @@
 	color: aliceblue;
 	font-family: 'Adamina', serif; /*Familia tipografica o fuente de letra */
 	background-color: #28202F;
-	box-sizing: border-box;
 }
 
 html {
@@ -133,29 +132,33 @@ h1 {
 main h2 {
 	background-color: #28202F !important;
 	color: antiquewhite;
+	font-weight: 900;
+	margin-bottom: 0px;
 }
 
-.card-container {
-	margin: 20px;
+.contenedor { /*El contenedor que tiene las cajas*/
+	display: flex;
+	justify-content: center;
+	margin: 0 2rem 0 2rem;
+}
+
+.global-container {  
+	border: 1px solid #D3A448;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+	width: 30rem;
+	height: auto;
 	display: flex;
 	flex-direction: row;
-	width: 20rem;
+}
+
+.guion-container { /*La caja de la imagen*/
+    width: 100%;
 	height: auto;
-}
-
-.img-container {
+	display: flex;
 	flex-direction: column;
-}
-
-.img-card {
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.bio {
-	text-align: center;
-	padding: 10px;
-	color: white;
+	align-items: center;
 }
 
 /*FORMULARIO*/
